@@ -61,9 +61,10 @@ Mi obbliga a inserire un messaggio, potrebbe aprirmi l'editor di default (vim o 
 
 # TAG
 ```
+git branch
 git tag
 ```
-
+Posso creare un tag nuovo velocemente
 ```
 git tag v1.2
 git log
@@ -72,9 +73,6 @@ git log
 Modifico un file per esempio
 ```
 git status
-```
-
-```
 git add .
 git commit -m "Modifica per il tag 1.2"
 git log
