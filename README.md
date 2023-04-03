@@ -10,7 +10,7 @@ git flow release finish <version.r>
 ```
 
 
-### Dettagli
+### Feature
 ```
 git flow init
 git flow feature start prima_feature
@@ -24,12 +24,16 @@ git commit -m "Modifiche sulla Prima Feature"
 
 ```
 git flow feature finish prima_feature
-git log --graph --date=short // CONVIENE CREARE UN ALIAS TIPO glog
+git log --graph --date=short 
 ```
+// MAGARI POSSO CREARE UN ALIAS glog AL POSTO DI git log --graph --date=short
 
 
+
+
+### Release
 ```
-git flow release start 1.1
+git flow release start 1.0
 ```
 
 Faccio i test e gli eventuali fix
@@ -41,7 +45,6 @@ git commit -m "Fix sulla Prima Release"
 ```
 git flow release finish 1.1
 ```
-
 Mi obbliga a inserire un messaggio, potrebbe aprirmi l'editor di default (vim o Notepad++)
 
 
