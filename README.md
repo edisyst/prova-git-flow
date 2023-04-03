@@ -37,18 +37,16 @@ Faccio i test e gli eventuali fix
 ```
 git add .
 git commit -m "Fix sulla Prima Release"
-git flow release finish 1.1
+git flow release finish 1.0
 ```
 Mi obbliga a inserire un messaggio, potrebbe aprirmi l'editor di default (vim o Notepad++)
 
 
 
+### Hotfix
 ```
 git log --graph --date=short
-```
-
-```
-git flow hotfix start 1.1.1
+git flow hotfix start 1.0.1
 ```
 
 Faccio il fix
@@ -58,7 +56,7 @@ git commit -m "Primo Hotfix sulla Release 1.0"
 ```
 
 ```
-git flow hotfix finish 1.1.1
+git flow hotfix finish 1.0.1
 ```
 
 Mi obbliga a inserire un messaggio, potrebbe aprirmi l'editor di default (vim o Notepad++)
