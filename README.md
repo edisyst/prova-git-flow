@@ -20,9 +20,6 @@ Faccio le mie modifiche
 ```
 git add .
 git commit -m "Modifiche sulla Prima Feature"
-```
-
-```
 git flow feature finish prima_feature
 git log --graph --date=short 
 ```
@@ -40,9 +37,6 @@ Faccio i test e gli eventuali fix
 ```
 git add .
 git commit -m "Fix sulla Prima Release"
-```
-
-```
 git flow release finish 1.1
 ```
 Mi obbliga a inserire un messaggio, potrebbe aprirmi l'editor di default (vim o Notepad++)
