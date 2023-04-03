@@ -10,6 +10,7 @@ git flow release finish <version.r>
 ```
 
 
+
 ### Feature
 ```
 git flow init
@@ -43,6 +44,7 @@ Mi obbliga a inserire un messaggio, potrebbe aprirmi l'editor di default (vim o 
 
 
 
+
 ### Hotfix
 ```
 git log --graph --date=short
@@ -59,6 +61,7 @@ Mi obbliga a inserire un messaggio, potrebbe aprirmi l'editor di default (vim o 
 
 
 
+
 # TAG
 ```
 git branch
@@ -66,7 +69,7 @@ git tag
 ```
 Posso creare un tag nuovo velocemente
 ```
-git tag v1.2
+git tag 1.2
 git log
 ```
 
@@ -78,18 +81,21 @@ git commit -m "Modifica per il tag 1.2"
 git log
 ```
 
+Posso creare un branch da un tag specifico 
+- l'utilità dei tag è anche questa
+- in git flow questo sarebbe un support (un fix fatto su un vecchio tag/versione)
 ```
-git checkout -b branch-da-vecchio-tag 1.1
-```
-
-```
+git checkout -b branch_da_un_vecchio_tag 1.1
 git push --tags
 ```
 (altrimenti non pusha anche i tag)
 
 
+
+### Support
 https://git.logikum.hu/flow/support
-Per il support serve un commit hash di partenza.
+- Per il support serve un commit hash di partenza.
+
 Supponiamo di essere alla stable 10.4 ma di voler fare un support per la 9.0
 ```
 git flow support start support/9.0 12345
@@ -98,7 +104,7 @@ git branch support/6.0 12345 => in git normale sarebbe così
 
 
 
-# stash
+# Stash
 ```
 git stash
 ```
@@ -120,11 +126,13 @@ git stash push -m "stash con un messaggio"
 
 
 # cherry-pick
-Serve per copiare un commit di un branch in un altro branch (es. risolvo un bug su un branch e lo voglio portare su develop). Rompe la history però
+Serve per copiare un commit di un branch in un altro branch 
+- es. risolvo un bug su un branch e lo voglio portare su develop)
+- rompe la history dei commit però
 ```
 git checkout -b feature-nuova
 ```
-//Faccio le modifiche
+Faccio le modifiche
 ```
 git add .
 git commit -m "commit su feature-nuova da cherripickare su develop"
@@ -144,6 +152,7 @@ git cherry-pick bf2cc9e a657a1a 4ddb2b3
 
 
 
+# Altro
 ```
 git config user.name "Gino"
 ```
@@ -153,7 +162,7 @@ Modifica localmente solo il file .git/config di questo progetto, non il parametr
 ```
 git diff README.md
 ```
-// ho già impostato perchè esca bellino installando Git Bash
+Ho già impostato perchè esca bellino installando Git Bash
 
 
 
