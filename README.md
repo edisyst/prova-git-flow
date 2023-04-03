@@ -53,12 +53,8 @@ Faccio il fix
 ```
 git add .
 git commit -m "Primo Hotfix sulla Release 1.0"
-```
-
-```
 git flow hotfix finish 1.0.1
 ```
-
 Mi obbliga a inserire un messaggio, potrebbe aprirmi l'editor di default (vim o Notepad++)
 
 
